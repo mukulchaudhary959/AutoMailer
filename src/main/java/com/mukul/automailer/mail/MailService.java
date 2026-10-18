@@ -17,6 +17,7 @@ public class MailService {
         this.from = from;
     }
 
+    
     public SendMailResponse send(SendMailRequest request) {
         List<String> recipients = request.recipients().stream().distinct().toList();
 
